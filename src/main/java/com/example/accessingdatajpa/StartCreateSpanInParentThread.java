@@ -55,7 +55,7 @@ public class StartCreateSpanInParentThread {
         }
 
         activeSpan = openTracer.activeSpan();
-        System.out.println("activeSpan: " + activeSpan);
+        System.out.println("last activeSpan: " + activeSpan);
 
         Thread.sleep(1000);
         span2.finish();
